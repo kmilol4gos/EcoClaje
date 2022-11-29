@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco-Claje</title>
-    <link href="/css/estilo.css" rel="stylesheet"/>
-</head>
-<body>
-    <div class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="ubicaciones.html">Ubicaciones</a></li>
-            <li><a href="acercaDe.html">Acerca De</a></li>
-        </ul>
-    </div>
-    <h1>Contacto.</h1>
-</body>
+<html>
+	<head>
+		<link href="css/estilo.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+		<title>Eco-Claje</title>
+	</head>
+	<body id="body">
+		<header>
+			<div class="icon_menu" id="btn_open">
+				<i class="fas fa-bars"></i>
+			</div>
+		</header>
+
+		<div class="menu" id="menu">
+			<div class="name_page">
+				<i class="fa-sharp fa-solid fa-tree"></i>
+				<h4>Eco-Claje</h4>
+			</div>
+
+			<div class="options_menu">
+				<a href="index.html">
+					<div class="option">
+						<i class="fa-sharp fa-solid fa-house" title="Inicio"></i>
+						<h4>Inicio</h4>
+					</div>
+				</a>
+				<a href="ubicaciones.html">
+					<div class="option">
+						<i class="fa-sharp fa-solid fa-location-dot" title="Ubicaciones"></i>
+						<h4>Ubicaciones</h4>
+					</div>
+				</a>
+				<a href="acercaDe.html">
+					<div class="option">
+						<i class="fa-sharp fa-solid fa-clipboard" title="Acerca De"></i>
+						<h4>Acerca De</h4>
+					</div>
+				</a>
+				<a href="contacto.html" class="selected">
+					<div class="option">
+						<i class="fa-sharp fa-solid fa-envelope" title="Contacto"></i>
+						<h4>Contacto</h4>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<p1>Pagina creada para informar sobre lugares de reciclaje de productos</p1>
+		<script src="JavaScript/script.js"></script>
+	</body>
 </html>
