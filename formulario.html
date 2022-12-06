@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/estilo.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+		<title>Eco-Claje</title>
+        </head>
+	<body id="body">
+		<header>
+			<div class="icon_menu" id="btn_open">
+				<i class="fas fa-bars"></i>
+			</div>
+		</header>
+
+		<div class="menu" id="menu">
+			<div class="name_page">
+				<i class="fa-sharp fa-solid fa-tree"></i>
+				<h4>Eco-Claje</h4>
+			</div>
+
+			<div class="options_menu">
+				<a href="index.html">
+					<div class="option">
+						<i class="fa-sharp fa-solid fa-house" title="Inicio"></i>
+						<h4>Inicio</h4>
+					</div>
+				</a>
+				<a href="ubicaciones.html">
+					<div class="option">
+						<i class="fa-sharp fa-solid fa-location-dot" title="Ubicaciones"></i>
+						<h4>Ubicaciones</h4>
+					</div>
+				</a>
+				<a href="acercaDe.html">
+					<div class="option">
+						<i class="fa-sharp fa-solid fa-clipboard" title="Acerca De"></i>
+						<h4>Acerca De</h4>
+					</div>
+				</a>
+				<a href="contacto.html">
+					<div class="option">
+						<i class="fa-sharp fa-solid fa-envelope" title="Contacto"></i>
+						<h4>Contacto</h4>
+					</div>
+				</a>
+                <a href="formulario.html" class="selected">
+					<div class="option">
+						<i class="fa-sharp fa-solid fa-envelope" title="Contacto"></i>
+						<h4>Formulario</h4>
+					</div>
+				</a>
+			</div>
+		</div>
+		<script src="JavaScript/script.js"></script>
+	</body>
+	<main>
+
+		<h1>Insertar datos</h1><hr>
+        <form method="POST" name="form-work" action="php/guardar.php">
+            <fieldset>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label class="control-label" for="name">Nombre Empresa</label>
+                        <input name="nombre" class="form-control" placeholder="Nombre de la empresa" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label class="control-label" for="name">Dirección</label>
+                        <input name="direccion" class="form-control" placeholder="Direccion" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label class="control-label" for="name">Comuna</label>
+                        <input name="comuna" class="form-control" placeholder="Comuna" type="text"> <!--que elija la comuna por id-->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label class="control-label" for="name">Teléfono</label>
+                        <input name="telefono" class="form-control" placeholder="Teléfono" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label class="control-label" for="name">Material</label>
+                        <input name="material" class="form-control" placeholder="Material" type="text"> <!--dar a elegir entre los 7 id-->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label class="control-label" for="name">Peso Mínimo</label>
+                        <input name="pesomin" class="form-control" placeholder="Peso Mínimo" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label class="control-label" for="name">Peso Máximo</label>
+                        <input name="pesomax" class="form-control" placeholder="Peso Máximo" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block info">Guardar</button>
+
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+	</main>
+</html>
